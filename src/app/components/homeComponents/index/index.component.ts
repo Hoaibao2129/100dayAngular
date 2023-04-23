@@ -6,6 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent {
-   
+   isWarning : boolean = false;
+   isDangger : boolean = false;
   name : string = 'ANGULAR';
+
+  user = [
+    {
+      name : 'Hoài Bảo',
+      age : 18 ,
+      address : 'Quảng Nam'
+    },
+    {
+      name : 'Nguyễn A',
+      age : 19 ,
+      address : 'Điện Bàn'
+    }
+  ]
+  
+ 
+    
 }

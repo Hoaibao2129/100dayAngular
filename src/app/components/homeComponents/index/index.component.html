@@ -2,3 +2,8 @@
 {{name}}
 <br><br>
 <input type="text" [ngModel]="name" (ngModelChange)="name = $event">
+<br><br>
+<button (click)="isDangger = !isDangger">isDangger</button>
+<br><br>
+<button (click)="isWarning = !isWarning">isWarning</button>
+<div class="box" [class]="{'red-Boder' : isWarning , 'yellowBackground' : isDangger}"></div>
