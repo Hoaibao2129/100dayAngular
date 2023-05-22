@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+
+import { Component, VERSION } from '@angular/core';
 
 @Component({
   selector: 'app-index',
@@ -8,7 +9,9 @@ import { Component } from '@angular/core';
 export class IndexComponent {
    isWarning : boolean = false;
    isDangger : boolean = false;
-  name : string = 'ANGULAR';
+  name : string = 'ANGULAR ' + VERSION.major;
+  title : string = 'ANGULAR ' + VERSION.major;
+
 
   user = [
     {

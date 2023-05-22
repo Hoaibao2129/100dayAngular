@@ -13,3 +13,9 @@
 .yellowBackground{
    background-color: yellow;
 }
+
+#title{
+   color: brown;
+   font-family: 'Courier New', Courier, monospace;
+   text-align: center;
+}

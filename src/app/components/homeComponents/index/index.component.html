@@ -1,3 +1,4 @@
+<h1 id="title">{{title}}</h1>
 
 {{name}}
 <br><br>
@@ -7,3 +8,9 @@
 <br><br>
 <button (click)="isWarning = !isWarning">isWarning</button>
 <div class="box" [class]="{'red-Boder' : isWarning , 'yellowBackground' : isDangger}"></div>
+
+<app-progress-bar 
+  [progress]="20"
+  [progressColor]="'blue'"
+  [backgroundColor]="'#ccc'"> 
+</app-progress-bar>

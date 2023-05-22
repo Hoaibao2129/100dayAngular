@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IndexComponent } from './index/index.component';
 import { FormsModule } from '@angular/forms';
+import { ProgressBartModule } from '../share/progress-bar/progress-bar.module';
 
 
 
@@ -12,7 +13,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ProgressBartModule,
   ]
 })
 export class HomeCoponentsModule { }
