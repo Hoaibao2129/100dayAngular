@@ -1,30 +1,26 @@
 
-import { Component, VERSION } from '@angular/core';
+import { Component, OnInit, VERSION, ViewChild } from '@angular/core';
+import { ToggleComponent } from '../../share/toggle/toggle.component';
 
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.css']
 })
-export class IndexComponent {
-   isWarning : boolean = false;
-   isDangger : boolean = false;
-  name : string = 'ANGULAR ' + VERSION.major;
-  title : string = 'ANGULAR ' + VERSION.major;
+export class IndexComponent implements OnInit {
+  @ViewChild("toggle") changeToggle : ToggleComponent;
 
+  isWarning: boolean = false;
+  isDangger: boolean = false;
+  name: string = 'ANGULAR ' + VERSION.major;
+  title: string = 'ANGULAR ' + VERSION.major;
+  checked: boolean = false;
+  
+  ngOnInit() {}
 
-  user = [
-    {
-      name : 'Hoài Bảo',
-      age : 18 ,
-      address : 'Quảng Nam'
-    },
-    {
-      name : 'Nguyễn A',
-      age : 19 ,
-      address : 'Điện Bàn'
-    }
-  ]
+   onChangeToggle(){
+      this.changeToggle.toggle();
+   }
   
  
     
